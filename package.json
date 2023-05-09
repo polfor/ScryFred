@@ -14,6 +14,6 @@
   "author": "polfor",
   "license": "ISC",
   "dependencies": {
-    "alfy": "^1.1.0"
+    "run-node": "^2.0.0"
   }
 }

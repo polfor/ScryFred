@@ -3,19 +3,33 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string></string>
+	<string>com.scryfall.app</string>
 	<key>category</key>
 	<string>MTG</string>
 	<key>connections</key>
-	<dict/>
+	<dict>
+		<key>9B0A6E69-6DC9-4783-ACB5-DE5C7329F4B8</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>74CB91C8-4E50-4A16-885E-F82A59873042</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
 	<key>createdby</key>
-	<string></string>
+	<string>polfor</string>
 	<key>description</key>
 	<string>Scryfall integration for Alfred</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Scryfall</string>
+	<string>ScryFred</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -26,13 +40,15 @@
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
 				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
-				<integer>127</integer>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>scry</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -40,42 +56,70 @@
 				<key>queuedelaymode</key>
 				<integer>0</integer>
 				<key>queuemode</key>
-				<integer>1</integer>
+				<integer>2</integer>
 				<key>runningsubtext</key>
-				<string></string>
+				<string>Scouring the planes...</string>
 				<key>script</key>
-				<string></string>
+				<string>./node_modules/.bin/run-node index.js "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string></string>
+				<string>index.js</string>
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string></string>
+				<string>ScryFred</string>
 				<key>type</key>
-				<integer>5</integer>
+				<integer>0</integer>
 				<key>withspace</key>
 				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>650CBF04-1D8E-4C0F-9B41-DA8859E1C4FF</string>
+			<string>9B0A6E69-6DC9-4783-ACB5-DE5C7329F4B8</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>74CB91C8-4E50-4A16-885E-F82A59873042</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>650CBF04-1D8E-4C0F-9B41-DA8859E1C4FF</key>
+		<key>74CB91C8-4E50-4A16-885E-F82A59873042</key>
 		<dict>
 			<key>xpos</key>
-			<real>185</real>
+			<real>280</real>
 			<key>ypos</key>
-			<real>130</real>
+			<real>120</real>
+		</dict>
+		<key>9B0A6E69-6DC9-4783-ACB5-DE5C7329F4B8</key>
+		<dict>
+			<key>xpos</key>
+			<real>95</real>
+			<key>ypos</key>
+			<real>120</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
