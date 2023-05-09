@@ -34,9 +34,6 @@ else {
 	items.unshift({
 		title: "Display results on Scryfall",
 		subtitle: process.argv[2],
-		icon: {
-			path: "./scryfall-alt.png"
-		},
 		arg: "https://scryfall.com/search?q=" + encodeURIComponent(process.argv[2])
 	})
 }
