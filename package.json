@@ -1,0 +1,19 @@
+{
+  "name": "scryfred",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Scryfall integration for alfred",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "scryfred"
+  },
+  "author": "polfor",
+  "license": "ISC",
+  "dependencies": {
+    "alfy": "^1.1.0"
+  }
+}
